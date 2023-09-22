@@ -1,0 +1,58 @@
+:root {
+  --main-bg-color: #1d2635;
+  --txt-color-red: #ff073a;
+  --txt-color-green: #93c47d;
+  --secondary-bg-color: #243042;
+  --button-blue-color: #0d6efd;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+#landing {
+    height: 1283px;
+    width: 100%;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .landing-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .social-link {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+
+#title {
+  font-family: "Kaushan Script", cursive;
+  margin-bottom: 30px;
+  color: red;
+  text-shadow: 0.20rem 0.20rem 0.20rem purple;
+
+  display: block;
+  font-size: 3rem;
+  line-height: 1.3;
+  font-weight: 300;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+.timeline {
+    background-color: #0d6efd;
+    width: 100%;
+}
+
