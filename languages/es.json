@@ -25,5 +25,29 @@
         "date": "Sept 2019 - May 2021",
         "description": "Técnico Medio en Sistemas Microinformáticos y Redes"
     }
+  ],
+  
+  "projects": [
+    {
+      "title": "paubotella.github.io",
+      "tags": ["html", "css", "JavaScript"],
+      "img": "./img/pb.png",
+      "link": "https://github.com/PauBotella/paubotella.github.io",
+      "description": "Mi web personal donde muestro información sobre mi"
+    },
+    {
+      "title": "Deliver Eats",
+      "tags": ["dart", "flutter", "firebase"],
+      "img": "./img/Deliver_EatsLogo.png",
+      "link": "https://github.com/PauBotella/Deliver_Eats",
+      "description": "Aplicación de delivery hecha con el framework flutter"
+    },
+    {
+      "title": "mvpy",
+      "tags": ["python"],
+      "img": "./img/python2.png",
+      "link": "https://github.com/PauBotella/mvpy",
+      "description": "Clon del comando mv de linux"
+    }
   ]
 }

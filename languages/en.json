@@ -25,5 +25,28 @@
           "date": "Sept 2019 - May 2021",
           "description": "Vocational Education and Training (VET) in Microcomputer Systems and Networks"
       }
+    ],
+    "projects": [
+      {
+        "title": "paubotella.github.io",
+        "tags": ["html", "css", "JavaScript"],
+        "img": "./img/pb.png",
+        "link": "https://github.com/PauBotella/paubotella.github.io",
+        "description": "My personal website"
+      },
+      {
+        "title": "Deliver Eats",
+        "tags": ["dart", "flutter", "firebase"],
+        "img": "./img/Deliver_EatsLogo.png",
+        "link": "https://github.com/PauBotella/Deliver_Eats",
+        "description": "Delivery application made with the flutter framework"
+      },
+      {
+        "title": "mvpy",
+        "tags": ["python"],
+        "img": "./img/python2.png",
+        "link": "https://github.com/PauBotella/mvpy",
+        "description": "Basic mv command implementation in Python"
+      }
     ]
   }
