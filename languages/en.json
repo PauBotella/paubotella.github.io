@@ -1,0 +1,29 @@
+{
+    "timeline": [
+      {
+        "title": "UPV",
+        "date": "Sept 2023 - Present",
+        "description": "Computer Science Student at Polytechnic University of Valencia (UPV)"
+      },
+      {
+        "title": "Getronics",
+        "date": "Mar 2023 - Jun 2023",
+        "description": "Junior Programmer Intern"
+      },
+      {
+          "title": "IES Serpis",
+          "date": "Sept 2021 - May 2023",
+          "description": "Certificate of Higher Education (HNC) in cross-platform application development"
+      },
+      {
+          "title": "Dualred",
+          "date": "Mar 2021 - Jun 2023",
+          "description": "IT Technician Trainee"
+      },
+      {
+          "title": "IES Serpis",
+          "date": "Sept 2019 - May 2021",
+          "description": "Vocational Education and Training (VET) in Microcomputer Systems and Networks"
+      }
+    ]
+  }
