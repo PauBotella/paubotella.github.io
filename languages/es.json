@@ -1,4 +1,9 @@
 {
+  "titles": {
+    "timeline": "Educación y Experiencia",
+    "projects": "Proyectos"
+  },
+  
   "timeline": [
     {
       "title": "UPV",

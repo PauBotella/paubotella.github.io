@@ -1,5 +1,6 @@
 const timelineDiv = document.getElementsByClassName("timeline")[0];
 const projectDiv = document.getElementById("projects");
+const titles = document.getElementsByTagName("h1");
 
 document.getElementById("spainFlag").addEventListener("click", () => {
   changeLanguage("es");
@@ -23,14 +24,27 @@ const changeLanguage = async (language) => {
   for (const key in json) {
     const section = json[key];
 
-    if (key == "timeline") {
-      generateTimeline(section);
-    } else if (key == "projects") {
-      generateProjects(section);
-    } else {
+    switch (key) {
+      case "timeline":
+        generateTimeline(section);
+        break;
+      case "projects":
+        generateProjects(section);
+        break;
+      case "titles":
+        changeLanguageOfTitles(section)
+        break;
+      default:
+        break;
     }
   }
 };
+
+const changeLanguageOfTitles = (section) => {
+  console.log(section.timeline)
+  titles[1].textContent = section.timeline
+  titles[2].textContent = section.projects
+}
 
 const generateTimeline = (section) => {
   let index = 0;
@@ -93,7 +107,6 @@ const generateProjects = (section) => {
     cardBodyDiv.appendChild(descriptionP);
 
     for (let index = 0; index < tags.length; index++) {
-      console.log(tags);
       const span = document.createElement("span");
       span.textContent = tags[index];
       cardBodyDiv.appendChild(span);
