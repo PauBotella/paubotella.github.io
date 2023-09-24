@@ -46,7 +46,7 @@
         "tags": ["python"],
         "img": "./img/python2.png",
         "link": "https://github.com/PauBotella/mvpy",
-        "description": "Basic mv command implementation in Python"
+        "description": "mv command implementation in Python"
       }
     ]
   }

@@ -30,11 +30,18 @@ body {
   margin: 10px;
 }
 
-#landing {
+canvas {
+  position: absolute;
+  z-index: -1;
+}
+
+
+.landing {
   height: 1270px;
   width: 100%;
   vertical-align: middle;
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: center;

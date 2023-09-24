@@ -1,81 +1,75 @@
-const config = {
-  "particles": {
-    "number": {
-      "value": 10,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
-    "color": {
-      "value": ["#dc052d"]
-    },
-    "shape": {
-      "type": "polygon",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
+particlesJS({
+  particles: {
+    number: {
+      value: 10,
+      density: {
+        enable: true,
+        value_area: 800,
       },
-      "polygon": {
-        "nb_sides": 4
-      }
     },
-    "opacity": {
-      "value": 0.7,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.4,
-        "sync": false
-      }
+    color: {
+      value: ["#dc052d"],
     },
-    "size": {
-      "value": 15,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 4,
-        "size_min": 1,
-        "sync": false
-      }
+    shape: {
+      type: "polygon",
+      stroke: {
+        width: 0,
+        color: "#000000",
+      },
+      polygon: {
+        nb_sides: 4,
+      },
     },
-    "line_linked": {
-      "enable": false
+    opacity: {
+      value: 0.7,
+      random: true,
+      anim: {
+        enable: false,
+        speed: 1,
+        opacity_min: 0.4,
+        sync: false,
+      },
     },
-    "move": {
-      "enable": true,
-      "speed": 1,
-      "direction": "bottom",
-      "random": true,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 1200,
-        "rotateY": 600
-      }
-    }
+    size: {
+      value: 15,
+      random: true,
+      anim: {
+        enable: false,
+        speed: 4,
+        size_min: 1,
+        sync: false,
+      },
+    },
+    line_linked: {
+      enable: false,
+    },
+    move: {
+      enable: true,
+      speed: 1,
+      direction: "bottom",
+      random: true,
+      straight: false,
+      out_mode: "out",
+      bounce: false,
+      attract: {
+        enable: false,
+        rotateX: 1200,
+        rotateY: 600,
+      },
+    },
   },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": false
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: {
+        enable: false,
       },
-      "onclick": {
-        "enable": true,
-        "mode": "repulse"
+      onclick: {
+        enable: false,
+        mode: "repulse",
       },
-      "resize": true
+      resize: true,
     },
-    "retina_detect": true
-  }
-}
-
-window.onload = function() {
-  let clause = window.innerWidth < 768;
-  config.particles.number.value = clause ? 80 : 150;
-  particlesJS("landing", config);
- };
+    retina_detect: true,
+  },
+});
