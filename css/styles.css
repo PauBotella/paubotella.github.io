@@ -171,7 +171,6 @@ h1 {
 
   #projects {
     display: block !important;
-    margin-left: 40px;
   }
 
   .timeline::after {
