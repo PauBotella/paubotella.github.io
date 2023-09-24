@@ -174,7 +174,7 @@ h1 {
   .card {
     width: 350px !important;
     height: 500px !important;
-    margin: 12px !important;
+    margin: 21px !important;
   }
 
   .timeline::after {
