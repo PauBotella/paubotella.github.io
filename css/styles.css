@@ -8,7 +8,6 @@
 * {
   box-sizing: border-box;
   font-family: "Josefin Sans";
-  
 }
 
 body {
@@ -91,7 +90,7 @@ h1 {
 }
 
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 6px;
   background-color: var(--secondary-bg-color);
@@ -109,7 +108,7 @@ h1 {
 }
 
 .container::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 15px;
   height: 15px;
@@ -164,13 +163,18 @@ h1 {
   background-color: var(--secondary-bg-color);
   position: relative;
   border-radius: 6px;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
 @media screen and (max-width: 650px) {
-
   #projects {
     display: block !important;
+  }
+
+  .card {
+    width: 350px !important;
+    height: 500px !important;
+    margin: 12px !important;
   }
 
   .timeline::after {
@@ -193,7 +197,8 @@ h1 {
     border-color: transparent var(--secondary-bg-color) transparent transparent;
   }
 
-  .left::after, .right::after {
+  .left::after,
+  .right::after {
     left: 19px;
   }
 
@@ -203,9 +208,8 @@ h1 {
 }
 h2 {
   color: var(--txt-color-green);
-  font-family: 'Orbitron';
+  font-family: "Orbitron";
   font-size: 21px;
-
 }
 .subtitle {
   color: lightslategray;
@@ -227,14 +231,14 @@ h2 {
 
 .card {
   background-color: var(--secondary-bg-color);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   width: 400px;
   height: 500px;
   margin: 50px;
 }
 
 .card:hover {
-  box-shadow: 0 .1rem 1rem var(--txt-color-green) !important;
+  box-shadow: 0 0.1rem 1rem var(--txt-color-green) !important;
 }
 
 .card img {
@@ -253,15 +257,15 @@ a {
   padding: 1rem 2rem;
 }
 
-.card-body h2{
-  font-family: 'Orbitron';
+.card-body h2 {
+  font-family: "Orbitron";
 }
 
 span {
   background-color: white;
-  padding:4px ;
+  padding: 4px;
   border-radius: 5px;
-  font-family: 'Mooli';
+  font-family: "Mooli";
   font-weight: bold;
   font-size: 11px;
   border: solid 1px;
