@@ -167,7 +167,11 @@ h1 {
 }
 
 @media screen and (max-width: 650px) {
-  #projects {
+  #project {
+    display: block !important;
+  }
+
+  #skills {
     display: block !important;
   }
 
@@ -221,9 +225,14 @@ h2 {
   font-size: 16px;
 }
 
-#projects {
+
+#skills {
   width: 100%;
   height: 1280px;
+  position: absolute;
+}
+
+#projects {
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: center;
@@ -249,6 +258,7 @@ h2 {
 
 a {
   text-decoration: none;
+  height: 600px;
   color: black;
 }
 
@@ -277,4 +287,45 @@ span {
   #projects {
     grid-template-columns: auto auto;
   }
+  
+  #skills {
+    grid-template-columns: auto auto auto;
+  }
+
+}
+
+@media screen and (max-width: 1110px) {
+
+  #skills {
+    grid-template-columns: auto auto !important;
+  }
+
+}
+
+#skills {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: center;
+}
+
+.skill-card {
+  background-color: var(--secondary-bg-color);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  width: 300px;
+  height: 300px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-card img {
+  width: 70%;
+  height: 55%;
+  padding: 10px;
+}
+
+.skill-card h2 {
+  margin-top: 30px;
 }

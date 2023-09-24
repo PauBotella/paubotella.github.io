@@ -1,6 +1,7 @@
 const timelineDiv = document.getElementsByClassName("timeline")[0];
 const projectDiv = document.getElementById("projects");
 const titles = document.getElementsByTagName("h1");
+const skillsDiv = document.getElementById("skills");
 
 document.getElementById("spainFlag").addEventListener("click", () => {
   changeLanguage("es");
@@ -13,6 +14,7 @@ document.getElementById("ukFlag").addEventListener("click", () => {
 const changeLanguage = async (language) => {
   timelineDiv.innerHTML = "";
   projectDiv.innerHTML = "";
+  skillsDiv.innerHTML = "";
   let requestJson;
   if (language == "es") {
     requestJson = await fetch(`./languages/es.json`);
@@ -33,6 +35,9 @@ const changeLanguage = async (language) => {
         break;
       case "titles":
         changeLanguageOfTitles(section)
+        break;
+      case "skills":
+        generateSkills(section)
         break;
       default:
         break;
@@ -72,9 +77,26 @@ const generateTimeline = (section) => {
     descriptionP.classList.add("description");
     descriptionP.textContent = element.description;
 
+    const tags = element.tags;
+
     contentDiv.appendChild(titleH2);
     contentDiv.appendChild(subtitleP);
     contentDiv.appendChild(descriptionP);
+
+    /*
+
+    Code for generate the same tags as the cards projects.
+
+    if (tags !== undefined) {
+      for (let index = 0; index < tags.length; index++) {
+        const span = document.createElement("span");
+        span.textContent = tags[index];
+        contentDiv.appendChild(span);
+      }
+    }
+    
+    */
+
     containerDiv.appendChild(contentDiv);
     timelineDiv.appendChild(containerDiv);
 
@@ -120,6 +142,22 @@ const generateProjects = (section) => {
     link.appendChild(cardDiv);
 
     projectDiv.appendChild(link);
+  });
+};
+
+const generateSkills = (section) => {
+  section.forEach((element) => {
+    const cardDiv = document.createElement("div");
+    cardDiv.classList.add("skill-card");
+    const img = document.createElement("img");
+    img.src = element.img;
+
+    const titleH2 = document.createElement("h2");
+    titleH2.textContent = element.name;
+
+    cardDiv.appendChild(img);
+    cardDiv.appendChild(titleH2);
+    skillsDiv.appendChild(cardDiv);
   });
 };
 
