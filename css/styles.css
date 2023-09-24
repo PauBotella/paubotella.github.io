@@ -8,7 +8,8 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Kaushan Script", cursive;
+  font-family: "Josefin Sans";
+  
 }
 
 body {
@@ -60,11 +61,10 @@ canvas {
 }
 
 #title {
-  font-family: "Kaushan Script", cursive;
   margin-bottom: 30px;
   color: red;
   text-shadow: 0.2rem 0.2rem 0.2rem purple;
-
+  font-family: "Kaushan Script", cursive;
   display: block;
   font-size: 3rem;
   line-height: 1.3;
@@ -196,15 +196,17 @@ canvas {
 h2 {
   color: var(--txt-color-green);
   font-family: 'Orbitron';
+  font-size: 21px;
 
 }
 .subtitle {
   color: lightslategray;
-  margin-top: -13px;
+  margin-top: -5px;
 }
 
 .description {
   color: whitesmoke;
+  font-size: 16px;
 }
 
 #projects {
@@ -234,6 +236,7 @@ h2 {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .card-body {
@@ -249,7 +252,7 @@ span {
   background-color: white;
   padding:4px ;
   border-radius: 5px;
-  font-family: 'Orbitron';
+  font-family: 'Mooli';
   font-weight: bold;
   font-size: 11px;
   border: solid 1px;
