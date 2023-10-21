@@ -49,6 +49,7 @@ const changeLanguageOfTitles = (section) => {
   console.log(section.timeline)
   titles[1].textContent = section.timeline
   titles[2].textContent = section.projects
+  titles[3].textContent = section.skills
 }
 
 const generateTimeline = (section) => {

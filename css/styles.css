@@ -3,6 +3,10 @@
   --txt-color-red: #ff073a;
   --txt-color-green: #93c47d;
   --secondary-bg-color: #243042;
+  --title-shadow-color: purple;
+  --card-shadow-color: #00000026;
+  --timeline-description-color: whitesmoke;
+  --title-color: white;
 }
 
 * {
@@ -14,9 +18,25 @@ body {
   background-color: var(--main-bg-color);
 }
 
+#title {
+  margin-bottom: 30px;
+  color: red;
+  text-shadow: 0.2rem 0.2rem 0.2rem var(--title-shadow-color);
+  font-family: "Kaushan Script", cursive;
+  display: block;
+  font-size: 4rem !important;
+  line-height: 1.3;
+  font-weight: 300;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
 h1 {
-  color: white;
-  text-shadow: 0.2rem 0.2rem 0.2rem purple;
+  color: var(--title-color);
+  text-shadow: 0.2rem 0.2rem 0.2rem var(--title-shadow-color);
   font-size: 3rem !important;
 }
 
@@ -65,22 +85,6 @@ h1 {
 .social-link {
   align-items: center;
   justify-content: center;
-}
-
-#title {
-  margin-bottom: 30px;
-  color: red;
-  text-shadow: 0.2rem 0.2rem 0.2rem purple;
-  font-family: "Kaushan Script", cursive;
-  display: block;
-  font-size: 4rem !important;
-  line-height: 1.3;
-  font-weight: 300;
-  -webkit-transform: rotate(-5deg);
-  -moz-transform: rotate(-5deg);
-  -ms-transform: rotate(-5deg);
-  -o-transform: rotate(-5deg);
-  transform: rotate(-5deg);
 }
 
 .timeline {
@@ -163,7 +167,7 @@ h1 {
   background-color: var(--secondary-bg-color);
   position: relative;
   border-radius: 6px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0.5rem 1rem var(--card-shadow-color) !important;
 }
 
 h2 {
@@ -177,7 +181,7 @@ h2 {
 }
 
 .description {
-  color: whitesmoke;
+  color: var(--timeline-description-color);;
   font-size: 16px;
 }
 
@@ -195,7 +199,7 @@ h2 {
 
 .card {
   background-color: var(--secondary-bg-color);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0.5rem 1rem var(--card-shadow-color) !important;
   width: 400px;
   height: 500px;
   margin: 50px;
@@ -246,7 +250,7 @@ span {
 
 .skill-card {
   background-color: var(--secondary-bg-color);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0.5rem 1rem var(--card-shadow-color) !important;
   width: 300px;
   height: 300px;
   margin: 50px;
